@@ -452,8 +452,10 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 .uk-nav-info {
 	
 	font-size: 1.6rem;
-	
-	
+}
+
+.sidemenu {
+	display: none;
 }
 
 .side-nav-container {
