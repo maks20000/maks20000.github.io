@@ -460,10 +460,13 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 
 #open-side-nav {
 	cursor: pointer;
+	box-sizing: border-box;
 }
 
 #open-side-nav:hover {
-	color: black;
+	color: #fff;
+	-webkit-text-stroke: 0.5px rgba(108, 190, 3, 1);
+	
 }
 
 .side-nav-container {
