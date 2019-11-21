@@ -31,7 +31,10 @@ font-family: 'CenturyGothicRegular';
 url('./fonts/CenturyGothic-Bold.ttf') format('truetype'),
 font-weight: normal;
 }
-	
+
+html {
+	background: transparent;
+}
 
 h1,h2,h3,h4,h5,h6{
 	
@@ -457,6 +460,33 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 .sidemenu {
 	display: none;
 }
+
+.sidemenu-style li {
+	font-size: 45px;
+    line-height: 100%;
+	font-weight: 100;
+}
+
+.sidemenu-style li a{
+	color: #757575;
+	text-decoration: none;
+	font-weight: 300;
+    display: block;
+    padding: 30px 50px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.sidemenu-style li a:hover {
+	padding-left: 60px;
+  	text-decoration: none;
+}
+
 
 #open-side-nav {
 	cursor: pointer;
