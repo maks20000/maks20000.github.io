@@ -58,7 +58,7 @@ li{list-style:none}
 uk-text-primary
 .uk-list-line > li:nth-child(n+2){border-top:1px solid #f1f1f1;margin-top:10px;padding-top:10px}
 .uk-block-secondary{background:#313131}
-.tp-block-small{background:#fff;border:1px solid #f1f1f1;padding-top:15px;padding-bottom:15px;z-index:1}
+.tp-block-small{background:#fff;border:1px solid #f1f1f1;padding-top:15px;padding-bottom:15px;z-index:1;padding-left: 75px;}
 .tp-user-image{background-color:#6CBE03;border-radius:50%;height:28px;padding:2px;width:28px}
 .tp-bottom-bloc{display:block;width:100%;background:rgba(108, 190, 3, 0.90) none repeat scroll 0 0;position:absolute;bottom:0}
 .tp-central-text-sl{border:2px solid #fff;padding:15px 0 0}
@@ -531,6 +531,9 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 		max-width:1400px;padding:0 35px;
 		
 		}
+	.tp-block-small {
+		padding-left: 50px;
+	}
 		}
 		
 @media (max-width:768px){
@@ -538,6 +541,9 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 	.uk-letters-container .word-second {left: 70%; font-size: 80px;}
 	.fsm-button {
 		top: 7px;
+	}
+	.tp-block-small {
+		padding-left: 0px;
 	}
 		}
 
