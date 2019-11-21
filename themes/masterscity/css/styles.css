@@ -475,6 +475,7 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 .open-nav {
 	transform: perspective( 600px ) rotateY(-30deg) scale(0.5);
 	transition: all 1s ease-in-out;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
 }
 
 .side-nav-wrapper {

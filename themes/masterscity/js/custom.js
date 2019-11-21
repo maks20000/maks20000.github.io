@@ -58,17 +58,32 @@ ScrollReveal().reveal('.serv', slideUpServ);
 ScrollReveal().reveal('.turn', slideUpTurn);
 
 
-var root = $("body");
-var child = root.children();
-root.prepend("<div class='side-nav-wrapper'></div>");
+$(".sidemenu").fly_sidemenu({
+    btnContent: "", // This option let you define what appears inside the side menu button. You can add your custom icon here. This option accepts all HTML tags. The default value is "=" string.
+    position: "left", // This option will let you define where the sidebar will appear on the page. Available options are "top", "left", "right", "bottom". The default value is "left"
+    customSelector: "li", // In case you do not want to use lists, simply define your own css selector here. The default value is "li".
+    hideButton: true // You can disable the auto creation of toggle button by changing this to true. The default value is false.
+  });
+
+
+//var root = $("body");
+//var child = root.children();
+//root.prepend("<div class='side-nav-wrapper'></div>");
+var toggle = false;
 var btn = $("#open-side-nav").click (function () {
-    $(".side-nav-wrapper").append(child);
-    root.addClass("side-nav-container")
-    $(".side-nav-container").prepend($("#nav-content"));
-    $("#nav-content").toggle();
-	root.toggleClass("open");
-	$(".side-nav-wrapper").height('100vh');
-	$(".side-nav-wrapper").toggleClass("open-nav");
+	if (!toggle) {
+		setTimeout (function () {
+			$(".sidemenu").toggleMenu();
+		},100)
+	} toggle=!toggle;
+   // $(".side-nav-wrapper").append(child);
+   // root.addClass("side-nav-container")
+  //  $(".side-nav-container").prepend($("#nav-content"));
+  //  $("#nav-content").toggle();
+	//root.toggleClass("open");
+//	$(".side-nav-wrapper").height('100vh');
+//	$(".side-nav-wrapper").toggleClass("open-nav");
+
 })
            
 
