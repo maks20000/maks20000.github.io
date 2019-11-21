@@ -458,6 +458,14 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 	display: none;
 }
 
+#open-side-nav {
+	cursor: pointer;
+}
+
+#open-side-nav:hover {
+	color: black;
+}
+
 .side-nav-container {
 	
 	transition: all 1s ease-in-out;
