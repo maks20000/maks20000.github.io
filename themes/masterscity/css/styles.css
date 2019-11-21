@@ -469,6 +469,18 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 	
 }
 
+.opened {
+	position: fixed;
+	left: 0;
+	top: 20%;
+	transform: translate3d(-10%, 0, 0);
+	transition: all 1s ease-in-out;
+}
+
+.fsm-button {
+	top: 46px;
+}
+
 .side-nav-container {
 	
 	transition: all 1s ease-in-out;
@@ -484,6 +496,8 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 	position:absolute;
 	display: none;
 }
+
+
 
 .open-nav {
 	transform: perspective( 600px ) rotateY(-30deg) scale(0.5);
@@ -522,7 +536,9 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 @media (max-width:768px){
 	.uk-letters-container .word-first {font-size: 80px; }
 	.uk-letters-container .word-second {left: 70%; font-size: 80px;}
-	
+	.fsm-button {
+		top: 7px;
+	}
 		}
 
 @media (max-width:560px){

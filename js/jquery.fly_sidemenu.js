@@ -61,7 +61,8 @@
            if (settings.position == "top" && settings.position == "bottom") $(".fsm-wrapper .fsm-sidebar").width("99%").width("100%") 
         });
 
-      } else {
+      } 
+      else {
         $(".fsm-container").css({
           "cursor": "pointer",
           "overflow": "hidden",
