@@ -465,7 +465,7 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 
 #open-side-nav:hover {
 	color: #fff;
-	-webkit-text-stroke: 0.5px rgba(108, 190, 3, 1);
+	-webkit-text-stroke: 0.000001px rgba(108, 190, 3, 1);
 	
 }
 
