@@ -470,6 +470,7 @@ option:nth-child(n+2){border:1px solid #f9f9f9}
 .sidemenu-style li a{
 	color: #757575;
 	text-decoration: none;
+	font-family: 'open sans';
 	font-weight: 300;
     display: block;
     padding: 30px 50px;
